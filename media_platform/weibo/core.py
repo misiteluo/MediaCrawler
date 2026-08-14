@@ -321,6 +321,10 @@ class WeiboCrawler(AbstractCrawler):
                     # If full text fetching is enabled, batch get full text first
                     updated_note_list = await self.batch_get_notes_full_text(note_list)
                     await weibo_store.batch_update_weibo_notes(updated_note_list)
+                    for note_item in updated_note_list:
+                        mblog = note_item.get("mblog")
+                        if mblog:
+                            await self.get_note_images(mblog)
 
                 # Get all note information of the creator
                 all_notes_list = await self.wb_client.get_all_notes_by_creator_id(
