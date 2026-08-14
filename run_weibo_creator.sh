@@ -10,6 +10,7 @@ set -euo pipefail
 #    开启 "Allow remote debugging for this browser instance"，并提前登录微博。
 # 3. 将下面 WEIBO_CREATOR_ID 修改为目标创作者的微博数字用户 ID。
 #    例如主页为 https://weibo.com/u/5756404150，用户 ID 就是 5756404150。
+# 4. WEIBO_DATA_ROOT 设置本次采集的独立保存根目录。
 #
 # 需要在 config/base_config.py 中确认：
 # - ENABLE_GET_MEIDAS = True：下载微博图片；False 只采集结构化信息。
@@ -30,11 +31,13 @@ set -euo pipefail
 # 创作者模式会持续翻页，直到没有更多当前账号可访问的公开微博。
 
 WEIBO_CREATOR_ID="示例微博数字用户ID"
+WEIBO_DATA_ROOT="data/weibo/创作者名称"
 
 uv run main.py \
   --platform wb \
   --lt qrcode \
   --type creator \
   --creator_id "$WEIBO_CREATOR_ID" \
+  --save_data_path "$WEIBO_DATA_ROOT" \
   --get_comment false \
   --max_concurrency_num 1

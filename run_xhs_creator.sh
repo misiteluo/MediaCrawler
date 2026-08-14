@@ -10,6 +10,7 @@ set -euo pipefail
 #    开启 "Allow remote debugging for this browser instance"，并提前登录小红书。
 # 3. 将下面 CREATOR_URL 修改为目标创作者主页的完整链接，尽量保留
 #    xsec_token 和 xsec_source 参数。
+# 4. CREATOR_DATA_ROOT 设置本次采集的独立保存根目录。
 #
 # 可按需求修改 config/base_config.py：
 # - ENABLE_GET_MEIDAS：True 下载笔记图片和视频；False 只采集结构化信息。
@@ -27,12 +28,14 @@ set -euo pipefail
 # 当创作者主页没有更多可访问的公开笔记时，程序会自动停止。
 
 CREATOR_URL="https://www.xiaohongshu.com/user/profile/示例用户ID?xsec_token=示例TOKEN&xsec_source=pc_search"
+CREATOR_DATA_ROOT="data/xhs/创作者名称"
 
 uv run main.py \
   --platform xhs \
   --lt qrcode \
   --type creator \
   --creator_id "$CREATOR_URL" \
+  --save_data_path "$CREATOR_DATA_ROOT" \
   --crawler_max_notes_count 999999 \
   --get_comment false \
   --max_concurrency_num 1
