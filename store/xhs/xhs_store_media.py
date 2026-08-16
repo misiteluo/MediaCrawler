@@ -61,7 +61,7 @@ class XiaoHongShuImage(AbstractStoreImage):
         Returns:
 
         """
-        return f"{self.image_store_path}/{notice_id}/{extension_file_name}"
+        return f"{self.image_store_path}/{notice_id}_{extension_file_name}"
 
     async def save_image(self, notice_id: str, pic_content: str, extension_file_name):
         """
@@ -75,7 +75,7 @@ class XiaoHongShuImage(AbstractStoreImage):
         Returns:
 
         """
-        pathlib.Path(self.image_store_path + "/" + notice_id).mkdir(parents=True, exist_ok=True)
+        pathlib.Path(self.image_store_path).mkdir(parents=True, exist_ok=True)
         save_file_name = self.make_save_file_name(notice_id, extension_file_name)
         async with aiofiles.open(save_file_name, 'wb') as f:
             await f.write(pic_content)
@@ -112,7 +112,7 @@ class XiaoHongShuVideo(AbstractStoreVideo):
         Returns:
 
         """
-        return f"{self.video_store_path}/{notice_id}/{extension_file_name}"
+        return f"{self.video_store_path}/{notice_id}_{extension_file_name}"
 
     async def save_video(self, notice_id: str, video_content: str, extension_file_name):
         """
@@ -126,7 +126,7 @@ class XiaoHongShuVideo(AbstractStoreVideo):
         Returns:
 
         """
-        pathlib.Path(self.video_store_path + "/" + notice_id).mkdir(parents=True, exist_ok=True)
+        pathlib.Path(self.video_store_path).mkdir(parents=True, exist_ok=True)
         save_file_name = self.make_save_file_name(notice_id, extension_file_name)
         async with aiofiles.open(save_file_name, 'wb') as f:
             await f.write(video_content)
