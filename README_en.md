@@ -2,7 +2,7 @@
 
 <div align="center">
 
-### 🤝 Special Thanks to Our Platinum Sponsor
+### 🤝 Special Thanks to Our Gold Sponsor
 
 <a href="https://www.browseract.ai/mediacrawler" target="_blank">
   <img src="docs/static/images/browseract_ad.jpg" alt="BrowserAct" width="600">
@@ -11,7 +11,7 @@
 <br>
 
 <a href="https://www.browseract.ai/mediacrawler" target="_blank">
-<small>BrowserAct supports extracting data from any website. Just describe the data you need, and BrowserAct will explore and test web pages in a real browser, generating reliable, reusable data collection Bots that return structured results. Built-in stealth browsing and captcha handling, plus high-quality residential proxies. No code required — try it for free now.</small>
+<small>BrowserAct lets you extract data from any website with a single sentence. No code required—build once, reuse reliably, and consume very few tokens. BrowserAct uses a real browser to automatically build data collection Bots, with built-in stealth browsing, CAPTCHA handling, and residential proxies, then outputs structured results directly. Try it free now.</small>
 </a>
 
 </div>
@@ -23,6 +23,8 @@
 <a href="https://trendshift.io/repositories/8291" target="_blank">
   <img src="https://trendshift.io/api/badge/repositories/8291" alt="NanmiCoder%2FMediaCrawler | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/>
 </a>
+
+[![AtomGit](https://atomgit.com/NanmiCoder/MediaCrawler/star/new_badge.svg)](https://atomgit.com/NanmiCoder/MediaCrawler)
 
 [![GitHub Stars](https://img.shields.io/github/stars/NanmiCoder/MediaCrawler?style=social)](https://github.com/NanmiCoder/MediaCrawler/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/NanmiCoder/MediaCrawler?style=social)](https://github.com/NanmiCoder/MediaCrawler/network/members)
@@ -296,18 +298,42 @@ MediaCrawler supports multiple data storage methods, including CSV, JSON, JSONL,
     </tr>
     <tr>
       <td align="center" valign="middle">
-        <a href="https://www.atlascloud.ai/?utm_source=github&utm_medium=link&utm_campaign=mei%27da%27c%27rmeidacrawler"><img width="160" alt="Atlas Cloud" src="docs/static/images/atlas_cloud_logo_black.png#gh-light-mode-only"><img width="160" alt="Atlas Cloud" src="docs/static/images/atlas_cloud_logo_white.png#gh-dark-mode-only"></a>
+        <a href="https://go.nodemaven.com/MediaCrawleroctober"><img src="docs/static/images/nodemaven_banner_oct.png" width="180" alt="NodeMaven"></a>
       </td>
       <td valign="middle">
-        <a href="https://www.atlascloud.ai/?utm_source=github&utm_medium=link&utm_campaign=mei%27da%27c%27rmeidacrawler">Atlas Cloud</a> is a full-modal AI inference platform that gives developers a single AI API to access video generation, image generation, and LLM APIs. Instead of managing multiple vendor integrations, you connect once and get unified access to 300+ curated models across all modalities. Check out Atlas Cloud's new <a href="https://www.atlascloud.ai/console/coding-plan">coding plan promotion</a> for more budget-friendly API access.
+        <a href="https://go.nodemaven.com/MediaCrawleroctober">NodeMaven</a> is an efficient proxy provider for web scraping and automation, offering the highest-quality IPs on the market. Key benefits include 99.9% uptime, ZIP targeting, IP filtering across all proxies (fraud score below 97%), no KYC, and unique free tools such as Proxy Bandwidth Checker, Meta Tag Checker, IP Lookup, and more. MediaCrawler users get 35% off mobile and residential proxies with code <code>CRAWLER35</code>, and 40% off ISP (static) proxies with code <code>CRAWLER40</code>. 👉 <a href="https://go.nodemaven.com/MediaCrawleroctober">Visit NodeMaven</a>
       </td>
     </tr>
     <tr>
       <td align="center" valign="middle">
-        <a href="https://go.nodemaven.com/MediaCrawlergh"><img src="docs/static/images/nodemaven_banner.png" width="180" alt="NodeMaven"></a>
+        <a href="https://www.openlux.ai/register?channel=c_drxir46c"><img src="docs/static/images/openlux_logo.png" width="160" alt="OpenLux"></a>
       </td>
       <td valign="middle">
-        <a href="https://go.nodemaven.com/MediaCrawlergh">NodeMaven</a> is an efficient proxy provider for web scraping and automation, offering the highest-quality IPs on the market. Key benefits include 99.9% uptime, ZIP targeting, IP filtering across all proxies (fraud score below 97%), no KYC, and unique free tools such as Proxy Bandwidth Checker, Meta Tag Checker, IP Lookup, and more. MediaCrawler users get 35% off mobile and residential proxies with code <code>CRAWLER35</code>, and 40% off ISP (static) proxies with code <code>CRAWLER40</code>. 👉 <a href="https://go.nodemaven.com/MediaCrawlergh">Visit NodeMaven</a>
+        Thank you to <a href="https://www.openlux.ai/register?channel=c_drxir46c">OpenLux</a> for sponsoring this project! OpenLux is an all-in-one AI platform for businesses, bringing together leading AI models from major providers worldwide. With fast, reliable service and responsive technical support, OpenLux offers base pricing for Claude, OpenAI, and Gemini models as low as 8.82%, 4%, and 8% of official rates, respectively. Exclusive offer for MediaCrawler users: Sign up through our <a href="https://www.openlux.ai/register?channel=c_drxir46c">referral link</a> and enjoy up to 7.5% off credit top-ups! 👉 <a href="https://www.openlux.ai/register?channel=c_drxir46c">Get started with OpenLux</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" valign="middle">
+        <a href="https://sx.org/c/CRAWLER3G"><img src="docs/static/images/sx_logo.png" width="180" alt="SX.ORG"></a>
+      </td>
+      <td valign="middle">
+        <a href="https://sx.org/c/CRAWLER3G">SX.ORG</a> is a high-performance proxy network built for heavy web scraping and anti-bot bypass, fully compatible with MediaCrawler. Key advantages include global dynamic residential IP coverage across 190+ locations, 99.9% network uptime, precise country/city/ASN targeting, native HTTP(S) &amp; SOCKS5 support, and flexible session rotation for social media platforms. MediaCrawler users can use exclusive promo code <code>CRAWLER3G</code> at signup to get <strong>3 GB</strong> of free trial traffic. 👉 <a href="https://sx.org/c/CRAWLER3G">Claim 3 GB on SX.ORG</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" valign="middle">
+        <a href="https://proxylane.dev/?utm_source=mediacrawler&utm_medium=partnership&utm_campaign=mediacrawler_sponsor_202610&utm_content=github_readme_en"><img src="docs/static/images/proxylane_banner.png" width="180" alt="ProxyLane"></a>
+      </td>
+      <td valign="middle">
+        <a href="https://proxylane.dev/?utm_source=mediacrawler&utm_medium=partnership&utm_campaign=mediacrawler_sponsor_202610&utm_content=github_readme_en">ProxyLane</a> provides residential IPs inside mainland China (China Telecom, Unicom, Mobile) for running MediaCrawler from servers outside China, with the exit pinned to Shanghai, Beijing, Guangzhou, Shenzhen or another city. Add <code>_c_CN_city_Shanghai</code> to your proxy username in static mode to get a Shanghai residential IP; see the <a href="docs/proxylane/README_en.md">3-step setup guide</a>. MediaCrawler users can sign up with code <code>MEDIACRAWLER3GB</code> to get <strong>3 GB</strong> of free traffic. 👉 <a href="https://proxylane.dev/redeem?code=MEDIACRAWLER3GB&utm_source=mediacrawler&utm_medium=partnership&utm_campaign=mediacrawler_sponsor_202610&utm_content=github_readme_en">Claim 3 GB free</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" valign="middle">
+        <a href="https://proxy-seller.com/?partner=72D769D7B7FB4A8B"><img src="docs/static/images/proxy_seller_logo.png" width="180" alt="Proxy-Seller"></a>
+      </td>
+      <td valign="middle">
+        <a href="https://proxy-seller.com/?partner=72D769D7B7FB4A8B">Proxy-Seller</a> is a professional proxy provider for web scraping, data collection and automation, offering five product lines — residential, mobile (4G/5G/LTE), static ISP, and datacenter IPv4 and IPv6 — covering 220+ locations worldwide with 47M+ residential IPs and precise targeting by country, city and ISP. Key benefits include 99.7% uptime, full HTTP(S) and SOCKS5 support, flexible switching between static and rotating IPs, high-concurrency request handling, a RESTful API and multi-language SDKs (Python, Node.js, PHP, Java, Go), plus 24/7 technical support. Certified to ISO/IEC 27001 and ISO 9001 and trusted by 185,000+ customers worldwide, it works well with MediaCrawler and other multi-platform scraping tools. MediaCrawler users get 15% off with code <code>MCRAWLER15</code>. 👉 <a href="https://proxy-seller.com/?partner=72D769D7B7FB4A8B">Visit Proxy-Seller</a>
       </td>
     </tr>
   </tbody>
@@ -326,8 +352,12 @@ Become a sponsor and showcase your product here, getting massive exposure daily!
 
 ### 📚 Other
 - **FAQ**: [MediaCrawler Complete Documentation](https://nanmicoder.github.io/MediaCrawler/)
+
+### 🧩 My Other Projects
 - **Crawler Beginner Tutorial**: [CrawlerTutorial Free Tutorial](https://github.com/NanmiCoder/CrawlerTutorial)
 - **News Crawler Open Source Project**: [NewsCrawlerCollection](https://github.com/NanmiCoder/NewsCrawlerCollection)
+- **Open Source Desktop Agent**: [cc-haha](https://github.com/NanmiCoder/cc-haha) — a local-first, cross-platform desktop workspace for agents, with multi-agent collaboration, Git worktrees, a skill marketplace, multi-model support and Computer Use, plus remote access via WeChat / Feishu / DingTalk and more
+- **DeepSeek Harness Plugin**: [dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) — brings Agent Teams to DeepSeek Harness, so multiple agents can work in parallel on complex tasks
 
 
 ## ⭐ Star Trend Chart

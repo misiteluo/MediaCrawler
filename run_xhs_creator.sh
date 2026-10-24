@@ -13,13 +13,14 @@ set -euo pipefail
 # 4. CREATOR_DATA_ROOT 设置本次采集的独立保存根目录。
 #
 # 可按需求修改 config/base_config.py：
-# - ENABLE_GET_MEIDAS：True 下载笔记图片和视频；False 只采集结构化信息。
+# - ENABLE_GET_MEDIA：True 下载笔记图片和视频；本脚本传入 --get_media true，强制开启媒体下载。
 # - ENABLE_GET_COMMENTS：是否采集一级评论。本脚本传入 --get_comment false，会覆盖该配置；如需评论，将脚本参数改为 true。
 # - ENABLE_GET_SUB_COMMENTS：是否采集二级评论；不需要时保持 False。
 # - CRAWLER_MAX_COMMENTS_COUNT_SINGLENOTES：每篇笔记最多采集的一级评论数。
 # - CRAWLER_MAX_SLEEP_SEC：翻页请求间隔秒数，建议设为 3 或更大。
 # - SAVE_DATA_OPTION：默认保存格式。本脚本未传该参数，因此使用此配置。
-# - SAVE_DATA_PATH：输出根目录；留空时数据默认保存到 data/xhs/。
+# - SAVE_DATA_PATH：输出根目录；本脚本通过 --save_data_path 指定。
+# - 媒体保存位置：CREATOR_DATA_ROOT/xhs/media/<作品ID>/媒体文件。
 # - ENABLE_CDP_MODE：True 使用本机 Chrome；False 使用 Playwright 浏览器。
 # - CDP_CONNECT_EXISTING：True 连接已开启远程调试的 Chrome。
 # - CDP_DEBUG_PORT：Chrome 远程调试端口，默认 9222。
@@ -37,5 +38,6 @@ uv run main.py \
   --creator_id "$CREATOR_URL" \
   --save_data_path "$CREATOR_DATA_ROOT" \
   --crawler_max_notes_count 999999 \
+  --get_media true \
   --get_comment false \
   --max_concurrency_num 1

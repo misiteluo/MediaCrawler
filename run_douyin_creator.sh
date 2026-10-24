@@ -12,7 +12,7 @@ set -euo pipefail
 # 4. CREATOR_DATA_ROOT 设置本次采集的独立保存根目录。
 #
 # 需要在 config/base_config.py 中确认：
-# - ENABLE_GET_MEIDAS = True：下载视频和图文图片；False 只采集结构化信息。
+# - ENABLE_GET_MEDIA = True：下载视频和图文图片；本脚本传入 --get_media true，强制开启媒体下载。
 # - ENABLE_GET_COMMENTS：是否采集一级评论。本脚本传入 --get_comment false，会覆盖该配置；如需评论，将脚本参数改为 true。
 # - ENABLE_GET_SUB_COMMENTS：是否采集二级评论；不需要时保持 False。
 # - CRAWLER_MAX_COMMENTS_COUNT_SINGLENOTES：每个作品最多采集的一级评论数。
@@ -23,8 +23,7 @@ set -euo pipefail
 # - CDP_DEBUG_PORT：Chrome 远程调试端口，默认 9222。
 #
 # 保存结构：
-# CREATOR_DATA_ROOT/douyin/videos/<作品ID>_video.mp4
-# CREATOR_DATA_ROOT/douyin/images/<作品ID>_000.jpeg
+# CREATOR_DATA_ROOT/dy/media/<作品ID>/媒体文件
 # CREATOR_DATA_ROOT/douyin/jsonl/creator_contents_<日期>.jsonl（默认 JSONL）
 #
 # 创作者模式会持续翻页，直到没有更多当前账号可访问的公开作品。
@@ -39,5 +38,6 @@ uv run main.py \
   --creator_id "$CREATOR_URL" \
   --save_data_path "$CREATOR_DATA_ROOT" \
   --crawler_max_notes_count 999999 \
+  --get_media true \
   --get_comment false \
   --max_concurrency_num 1
